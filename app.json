@@ -30,7 +30,7 @@
       "description": "The msg you want in welcome msg.",
       "value": ""
     },
-    "BOT_US": {
+    "BOT_USERNAME": {
       "description": "Your Bot username without '@'.",
       "value": ""
     },
