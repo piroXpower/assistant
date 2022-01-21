@@ -1,5 +1,5 @@
 # Powered By : © TeamRaichu 
-# Copyright (C) 2022 @OfficialRaiChu
+# Copyright (C) 2022 @RaiChuOfficial
 
 telethon>=1.21.1
 requests
