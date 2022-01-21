@@ -1,1 +1,1 @@
-bot: python -m telethon
+bot: python -m assistant
