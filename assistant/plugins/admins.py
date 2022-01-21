@@ -26,8 +26,8 @@ async def promote(event, perm):
     if not input_str and not user:
         await event.reply("Reply to a user or give its username to promote him!")
         return
-    sed = await Stark(GetFullUserRequest(id=user.sender_id or input_str))
-    await Stark(EditAdminRequest(event.chat_id, user.sender_id or input_str, ChatAdminRights(
+    sed = await Sammy(GetFullUserRequest(id=user.sender_id or input_str))
+    await Sammy(EditAdminRequest(event.chat_id, user.sender_id or input_str, ChatAdminRights(
                     add_admins=False,
                     invite_users=True,
                     change_info=False,
