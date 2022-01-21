@@ -1,6 +1,6 @@
-from GPBot import Stark
+from assistant import Sammy
 from telethon import events, Button
-from GPBot.status import *
+from assistant.tools import *
 from datetime import timedelta
 import os
 import requests
