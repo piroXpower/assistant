@@ -16,7 +16,7 @@ HELP_TEXT = """
 
 __Report Bugs At--->__ **@RaichuOfficial**
 All cmd can be used with ! or ? or /.
-""".format(Config.BOT_US)
+""".format(Config.BOT_USERNAME)
 
 
 @Sammy.on(events.NewMessage(pattern="[!?/]help"))
