@@ -16,7 +16,7 @@ async def check(event):
             await Sammy.edit_permissions(chat_id, event.sender_id, send_messages=True)
             await event.answer("You are succesfully unmuted!")
             await event.edit(Config.WELCOME_TEXT, buttons=[
-            [Button.url("Chat Rules!", "t.me/{}?start=rules".format(Config.BOT_US))]
+            [Button.url("Chat Rules!", "t.me/{}?start=rules".format(Config.BOT_USERNAME))]
             ], parse_mode="HTML", link_preview=False)
 
 
