@@ -3,7 +3,7 @@
 
 import glob
 from pathlib import Path
-from assistant.utils import load_plugins
+from assistant.utils.util import load_plugins
 import logging
 from assistant import Sammy
 
