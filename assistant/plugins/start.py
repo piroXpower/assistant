@@ -13,9 +13,7 @@ async def _(event):
 
      await event.edit(HELP_TEXT, buttons=[
         [Button.inline("Help & Commands", data="help")],
-        [Button.url("CreDits", "https://t.me/DeCoDeDevs")]]),
-        return
+        [Button.url("CreDits", "https://t.me/DeCoDeDevs")]])
+        
 
-    if event.is_group:
-       await event.reply("`I Am Alive 24/7!`")
-        return
+    
