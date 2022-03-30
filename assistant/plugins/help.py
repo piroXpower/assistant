@@ -39,3 +39,10 @@ async def _(event):
 async def _(event):
 
      await event.edit(HELP_TEXT, buttons=btn)
+
+@Sammy.on(events.callbackquery.CallbackQuery(data="start"))
+async def _(event):
+
+     await event.edit(HELP_TEXT, buttons=[
+        [Button.inline("Help & Commands", data="help")],
+        [Button.url("CreDits", "https://t.me/DeCoDeDevs")]])
