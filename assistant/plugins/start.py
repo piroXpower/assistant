@@ -1,4 +1,4 @@
-from assistant import Sammy
+from assistant import Sammy as Stark
 from telethon import events, Button
 
 PM_START_TEXT = """
@@ -8,12 +8,15 @@ I am a bot who works for @TeamDeCoDe and can detect spammers in groups can prote
 **Click the below button for getting help menu!**
 """
 
-@Sammy.on(events.callbackquery.CallbackQuery(data="start"))
-async def _(event):
+@Stark.on(events.NewMessage(pattern="^[?!/]start$"))
+async def start(event):
 
-     await event.edit(HELP_TEXT, buttons=[
-        [Button.inline("Help & Commands", data="help")],
-        [Button.url("CreDits", "https://t.me/DeCoDeDevs")]])
-        
+    if event.is_private:
+       await event.reply(PM_START_TEXT.format(event.sender.first_name), buttons=[
+        [Button.inline("Commands", data="help")],
+        [Button.url("Support", "https://t.me/DeCodeSupport")]])
+       return
 
-    
+    if event.is_group:
+       await event.reply("**Hehe Am Alive Baby💔**")
+       return
