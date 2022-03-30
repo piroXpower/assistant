@@ -6,7 +6,8 @@ btn =[
     [Button.inline("Admin", data="admin"), Button.inline("Bans", data="bans")],
     [Button.inline("Pins", data="pins"), Button.inline("Pugres", data="purges")],
     [Button.inline("Locks", data="locks"), Button.inline("Misc", data="misc")],
-    [Button.inline("Chat Cleaner", data="zombies")]]
+    [Button.inline("Chat Cleaner", data="zombies")],
+    [Button.inline("Back", data="start")]]
 
 HELP_TEXT = """
 **Heya {} help menu here:**
