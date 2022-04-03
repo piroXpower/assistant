@@ -12,9 +12,14 @@ I am a bot who works for @TeamDeCoDe and can detect spammers in groups can prote
 async def start(event):
 
     if event.is_private:
-       await event.reply(PM_START_TEXT.format(event.sender.first_name), buttons=[
-        [Button.inline("Commands", data="help")],
-        [Button.url("Support", "https://t.me/DeCodeSupport")]])
+       await event.reply(PM_START_TEXT.format(event.sender.first_name),
+ buttons=[
+          [
+            Button.inline("Commands", data="help"), 
+            Button.url("Support", "https://t.me/DeCodeSupport")
+          ]
+         ]
+     )
        return
 
     if event.is_group:
