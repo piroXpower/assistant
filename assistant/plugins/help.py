@@ -14,7 +14,7 @@ btn =[
         Button.inline("Misc", data="misc")
       ],
       [
-        Button.inline("Chat Cleaner", data="zombies")],
+        Button.inline("Chat Cleaner", data="zombies"), 
         Button.inline("Back", data="start")
       ]
      ]
