@@ -7,3 +7,4 @@ class Config(object):
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     WELCOME_MSG = os.environ.get("WELCOME_MSG", None)
     RULES = os.environ.get("RULES", None)
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
